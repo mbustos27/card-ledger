@@ -1,0 +1,16 @@
+{
+  "id": "bw7-41",
+  "localId": "41",
+  "name": "Samurott",
+  "category": "Pokemon",
+  "rarity": "Rare",
+  "set": { "id": "bw7", "name": "Boundaries Crossed" },
+  "dexId": [503],
+  "variants": { "normal": false, "reverse": true, "holo": true, "firstEdition": false },
+  "pricing": {
+    "tcgplayer": {
+      "holofoil": { "marketPrice": 1.00 },
+      "reverse-holofoil": { "marketPrice": 2.00 }
+    }
+  }
+}

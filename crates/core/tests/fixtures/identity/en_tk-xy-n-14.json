@@ -1,0 +1,10 @@
+{
+  "id": "tk-xy-n-14",
+  "localId": "14",
+  "name": "Pokémon Catcher",
+  "category": "Trainer",
+  "rarity": "Uncommon",
+  "set": { "id": "tk-xy-n", "name": "XY trainer Kit (Noivern)" },
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": null }
+}

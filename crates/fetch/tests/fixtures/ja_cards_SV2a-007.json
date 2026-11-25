@@ -1,0 +1,23 @@
+{
+  "category": "Pokemon",
+  "id": "SV2a-007",
+  "localId": "007",
+  "name": "ゼニガメ",
+  "rarity": "Common",
+  "image": "https://assets.tcgdex.net/ja/SV/SV2a/007",
+  "set": { "id": "SV2a", "name": "ポケモンカード151" },
+  "variants": { "firstEdition": false, "holo": false, "normal": true, "reverse": true, "wPromo": false },
+  "dexId": [7],
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.100Z",
+      "unit": "EUR",
+      "idProduct": 900207,
+      "low": 0.25,
+      "trend": 0.50,
+      "low-holo": 0.50,
+      "trend-holo": 1.00
+    },
+    "tcgplayer": null
+  }
+}

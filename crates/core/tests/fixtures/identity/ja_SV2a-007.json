@@ -1,0 +1,11 @@
+{
+  "id": "SV2a-007",
+  "localId": "007",
+  "name": "ゼニガメ",
+  "category": "Pokemon",
+  "rarity": "Common",
+  "set": { "id": "SV2a", "name": "ポケモンカード151" },
+  "dexId": [7],
+  "variants": { "normal": true, "reverse": true, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": null }
+}

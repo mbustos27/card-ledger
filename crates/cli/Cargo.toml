@@ -1,0 +1,14 @@
+[package]
+name = "card-ledger"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "card-ledger"
+path = "src/main.rs"
+
+[dependencies]
+card-ledger-core = { path = "../core" }
+card-ledger-fetch = { path = "../fetch" }
+card-ledger-ui = { path = "../ui" }

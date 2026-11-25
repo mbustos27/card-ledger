@@ -1,0 +1,16 @@
+{
+  "id": "xy1-28",
+  "localId": "28",
+  "name": "Talonflame",
+  "category": "Pokemon",
+  "rarity": "Rare",
+  "set": { "id": "xy1", "name": "XY" },
+  "dexId": [663],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": {
+    "tcgplayer": {
+      "holofoil": { "marketPrice": 1.00 },
+      "reverse-holofoil": { "marketPrice": 2.00 }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/target
+
+# Personal data never belongs in the repo.
+*.db
+*.db-wal
+*.db-shm
+justtcg.key
+collectr-export*.csv

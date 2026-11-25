@@ -1,0 +1,27 @@
+{
+  "category": "Trainer",
+  "id": "xy1-121",
+  "localId": "121",
+  "name": "Muscle Band",
+  "rarity": "Uncommon",
+  "image": "https://assets.tcgdex.net/en/xy/xy1/121",
+  "set": { "id": "xy1", "name": "XY" },
+  "variants": { "firstEdition": false, "holo": false, "normal": true, "reverse": false, "wPromo": false },
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.103Z",
+      "unit": "EUR",
+      "idProduct": 900121,
+      "low": 0.25,
+      "trend": 1.00,
+      "low-holo": 1.00,
+      "trend-holo": 2.00
+    },
+    "tcgplayer": {
+      "unit": "USD",
+      "updated": "2026-11-24T22:16:26.903Z",
+      "normal": { "productId": 87658, "lowPrice": 0.50, "marketPrice": 1.00 },
+      "reverse-holofoil": { "productId": 87658, "lowPrice": 1.50, "marketPrice": 2.50 }
+    }
+  }
+}

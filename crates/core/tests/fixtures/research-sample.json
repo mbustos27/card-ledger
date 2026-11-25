@@ -1,0 +1,244 @@
+[
+  {
+    "n": "Team Aqua's Kyogre EX",
+    "no": "6",
+    "set": "Double Crisis",
+    "variant": "Holofoil",
+    "nm": [
+      10,
+      20
+    ],
+    "lp": [
+      5,
+      10
+    ],
+    "mp": [
+      3,
+      6
+    ],
+    "conf": "high",
+    "check": "Example check text.",
+    "grade": "yes",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Yveltal EX",
+    "no": "XY62",
+    "set": "XY Promos",
+    "variant": "Holofoil",
+    "nm": [
+      100,
+      200
+    ],
+    "lp": [
+      50,
+      100
+    ],
+    "mp": [
+      40,
+      60
+    ],
+    "conf": "medium",
+    "check": "Example check text.",
+    "grade": "maybe",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Tepig",
+    "no": "RC1",
+    "set": "Generations: Radiant Collection",
+    "variant": "Holofoil",
+    "nm": [
+      30,
+      40
+    ],
+    "lp": [
+      15,
+      20
+    ],
+    "mp": [
+      9,
+      12
+    ],
+    "conf": "low",
+    "check": "Example check text.",
+    "grade": "no",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Snivy",
+    "no": "RC1",
+    "set": "Legendary Treasures: Radiant Collections",
+    "variant": "Holofoil",
+    "nm": [
+      40,
+      50
+    ],
+    "lp": [
+      20,
+      25
+    ],
+    "mp": [
+      12,
+      15
+    ],
+    "conf": "high",
+    "check": "Example check text.",
+    "grade": "yes",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Squirtle (JP)",
+    "no": "007/087",
+    "set": "20th Anniversary",
+    "variant": "Holofoil",
+    "nm": [
+      4,
+      6
+    ],
+    "lp": [
+      2,
+      3
+    ],
+    "mp": [
+      1.2,
+      1.8
+    ],
+    "conf": "medium",
+    "check": "Example check text.",
+    "grade": "maybe",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Bidoof (71)",
+    "no": "71/99",
+    "set": "Platinum Arceus",
+    "variant": "Reverse Holofoil",
+    "nm": [
+      60,
+      70
+    ],
+    "lp": [
+      30,
+      35
+    ],
+    "mp": [
+      18,
+      21
+    ],
+    "conf": "low",
+    "check": "Example check text.",
+    "grade": "no",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Xerneas EX (145 Full Art)",
+    "no": "145",
+    "set": "XY Base Set",
+    "variant": "Holofoil",
+    "nm": [
+      70,
+      80
+    ],
+    "lp": [
+      35,
+      40
+    ],
+    "mp": [
+      21,
+      24
+    ],
+    "conf": "high",
+    "check": "Example check text.",
+    "grade": "yes",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Psyduck",
+    "no": "220/198",
+    "set": "Scarlet & Violet Base Set",
+    "variant": "Holofoil",
+    "nm": [
+      80,
+      90
+    ],
+    "lp": [
+      40,
+      45
+    ],
+    "mp": [
+      24,
+      27
+    ],
+    "conf": "medium",
+    "check": "Example check text.",
+    "grade": "maybe",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Mystical Elf",
+    "no": "LOB-062",
+    "set": "The Legend of Blue Eyes White Dragon",
+    "variant": "1st Edition",
+    "nm": [
+      3,
+      5
+    ],
+    "lp": [
+      1.5,
+      2.5
+    ],
+    "mp": [
+      0.9,
+      1.5
+    ],
+    "conf": "low",
+    "check": "Example check text.",
+    "grade": "no",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Omanyte",
+    "no": "52",
+    "set": "Fossil",
+    "variant": "1st Edition",
+    "nm": [
+      100,
+      110
+    ],
+    "lp": [
+      50,
+      55
+    ],
+    "mp": [
+      30,
+      33
+    ],
+    "conf": "high",
+    "check": "Example check text.",
+    "grade": "yes",
+    "note": "Made-up example entry for tests."
+  },
+  {
+    "n": "Zorua (BW13)",
+    "no": "BW13",
+    "set": "Black and White Promos",
+    "variant": "Holofoil",
+    "nm": [
+      5,
+      15
+    ],
+    "lp": [
+      2.5,
+      7.5
+    ],
+    "mp": [
+      1.5,
+      4.5
+    ],
+    "conf": "medium",
+    "check": "Example check text.",
+    "grade": "maybe",
+    "note": "Made-up example entry for tests."
+  }
+]

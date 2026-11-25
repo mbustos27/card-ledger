@@ -1,0 +1,11 @@
+{
+  "id": "tk-xy-sy-14",
+  "localId": "14",
+  "name": "Granbull",
+  "category": "Pokemon",
+  "rarity": "Common",
+  "set": { "id": "tk-xy-sy", "name": "XY trainer Kit (Sylveon)" },
+  "dexId": [210],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": { "normal": { "marketPrice": 1.00 } } }
+}

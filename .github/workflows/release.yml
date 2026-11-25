@@ -1,0 +1,54 @@
+name: Release
+
+# Builds the Windows zip and SHA256SUMS from a version tag (v1.2.3) and attaches them to the
+# GitHub release for that tag, creating the release if it doesn't exist yet.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Tag matches the Cargo version
+        shell: pwsh
+        run: |
+          $tag = "${{ github.ref_name }}".TrimStart("v")
+          $line = Select-String -Path Cargo.toml -Pattern '^version = "(.+)"' | Select-Object -First 1
+          $cargo = $line.Matches[0].Groups[1].Value
+          if ($tag -ne $cargo) { Write-Error "tag v$tag but Cargo.toml says $cargo"; exit 1 }
+      - name: Test
+        run: cargo test --all --locked
+      - name: Build
+        run: cargo build --release --locked
+      - name: Package
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart('v')
+          $name = "card-ledger-$version-windows-x64"
+          New-Item -ItemType Directory $name | Out-Null
+          Copy-Item target/release/card-ledger.exe, README.md, LICENSE, CHANGELOG.md $name
+          Copy-Item data/sample-export.csv $name
+          Compress-Archive -Path $name -DestinationPath "$name.zip"
+          $hash = (Get-FileHash "$name.zip" -Algorithm SHA256).Hash.ToLower()
+          "$hash *$name.zip" | Out-File -Encoding ascii SHA256SUMS.txt
+          "ZIP=$name.zip" | Out-File -Append -Encoding utf8 $env:GITHUB_ENV
+      - name: Publish
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "${{ github.ref_name }}"
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --title "card-ledger $($tag.TrimStart('v'))" --notes "See CHANGELOG.md for what changed." $env:ZIP SHA256SUMS.txt
+          } else {
+            gh release upload $tag $env:ZIP SHA256SUMS.txt --clobber
+          }

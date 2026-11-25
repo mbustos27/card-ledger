@@ -1,0 +1,16 @@
+{
+  "id": "bw11-37",
+  "localId": "37",
+  "name": "Oshawott",
+  "category": "Pokemon",
+  "rarity": "Common",
+  "set": { "id": "bw11", "name": "Legendary Treasures" },
+  "dexId": [501],
+  "variants": { "normal": true, "reverse": true, "holo": false, "firstEdition": false },
+  "pricing": {
+    "tcgplayer": {
+      "normal": { "marketPrice": 1.00 },
+      "reverse-holofoil": { "marketPrice": 2.00 }
+    }
+  }
+}

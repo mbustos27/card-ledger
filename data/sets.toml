@@ -1,0 +1,455 @@
+# Collectr set name -> TCGdex set. Read by `identity::SetMap` (embedded at build time).
+#
+# Fields of each [[set]]:
+#   name         Collectr's "Set" column, exactly as the export writes it.
+#   id           TCGdex set id (https://api.tcgdex.net/v2/<lang>/sets/<id>).
+#   alt          Other TCGdex sets to try in order when Collectr folds several into one name
+#                (the two halves of a trainer kit). A card is taken from the set whose name matches.
+#   lang         "en" (default) or "ja".
+#   pad          How many digits TCGdex writes in localId: 0 = as printed without zeros ("15"),
+#                2 = promos ("XY01", "BW09", but "XY150"), 3 = SWSH/SV/ME and all ja sets ("025").
+#   radiant      true for Collectr's Radiant Collection names: the number must start with RC.
+#   rc_max       Highest RC number in the TCGdex set (only for sets that have a Radiant Collection).
+#   none         TCGdex has no usable data for this set; the text is the reason (card is Unresolved).
+#   not_pokemon  Not a Pokémon card at all (kept, left out of the piles).
+#
+# Verification (2026-11-24): the set list came from /v2/en/sets and /v2/ja/sets. For every
+# mapped set, /v2/<lang>/sets/<id> was fetched and each export line's number was looked up in
+# the listing (with the pad below) and its TCGdex name compared to Collectr's. "listing ok" in a
+# comment means every export line of that set was found by number with a matching name.
+
+# ---- Wizards of the Coast era -------------------------------------------------------------
+
+[[set]]
+name = "Base Set (Unlimited)"
+id = "base1"
+# listing ok: 102 cards.
+
+[[set]]
+name = "Jungle"
+id = "base2"
+# listing ok: 64 cards.
+
+[[set]]
+name = "Fossil"
+id = "base3"
+# listing ok: 62 cards.
+
+[[set]]
+name = "Base Set 2"
+id = "base4"
+# listing ok: 130 cards.
+
+[[set]]
+name = "Team Rocket"
+id = "base5"
+# listing ok: 83 cards; the "Dark" Pokémon keep "Dark" in their TCGdex names.
+
+[[set]]
+name = "Gym Heroes"
+id = "gym1"
+# listing ok: 132 cards.
+
+[[set]]
+name = "Neo Destiny"
+id = "neo4"
+# listing ok: 113 cards.
+
+[[set]]
+name = "Legendary Collection"
+id = "lc"
+# listing ok: 110 cards.
+
+# ---- EX era -------------------------------------------------------------------------------
+
+[[set]]
+name = "EX Hidden Legends"
+id = "ex5"
+# listing ok: TCGdex set "Hidden Legends".
+
+[[set]]
+name = "EX FireRed & LeafGreen"
+id = "ex6"
+# listing ok: "FireRed & LeafGreen"; TCGdex writes "♀"/"♂" where Collectr writes "F"/"M".
+
+[[set]]
+name = "EX Deoxys"
+id = "ex8"
+# listing ok: "Deoxys".
+
+[[set]]
+name = "EX Emerald"
+id = "ex9"
+# listing ok: "Emerald".
+
+[[set]]
+name = "EX Delta Species"
+id = "ex11"
+# listing ok: "Delta Species".
+
+[[set]]
+name = "EX Legend Maker"
+id = "ex12"
+# listing ok: "Legend Maker".
+
+[[set]]
+name = "EX Crystal Guardians"
+id = "ex14"
+# listing ok: "Crystal Guardians"; delta species cards carry "δ" in TCGdex names.
+
+[[set]]
+name = "EX Dragon Frontiers"
+id = "ex15"
+# listing ok: "Dragon Frontiers" (delta species names carry "δ").
+
+[[set]]
+name = "POP Series 9"
+id = "pop9"
+# listing ok: 17 cards.
+
+# ---- Diamond & Pearl / Platinum -----------------------------------------------------------
+
+[[set]]
+name = "Diamond and Pearl Promos"
+id = "dpp"
+pad = 2
+# listing ok: "DP Black Star Promos", localIds "DP01".."DP56"; TCGdex drops "LV.X" from names.
+
+[[set]]
+name = "Mysterious Treasures"
+id = "dp2"
+# listing ok.
+
+[[set]]
+name = "Secret Wonders"
+id = "dp3"
+# listing ok.
+
+[[set]]
+name = "Great Encounters"
+id = "dp4"
+# listing ok: TCGdex writes "Unown X" where Collectr writes "Unown [X]".
+
+[[set]]
+name = "Legends Awakened"
+id = "dp6"
+# listing ok: Castform forms are "Castform ... Form" in TCGdex (Collectr drops "Form").
+
+[[set]]
+name = "Platinum"
+id = "pl1"
+# listing ok.
+
+[[set]]
+name = "Rising Rivals"
+id = "pl2"
+# listing ok: 120 cards incl. the Rotom subset RT1-RT6.
+
+[[set]]
+name = "Supreme Victors"
+id = "pl3"
+# listing ok.
+
+[[set]]
+name = "Platinum Arceus"
+id = "pl4"
+# listing ok: TCGdex calls it "Arceus".
+
+[[set]]
+name = "Rumble"
+id = "ru1"
+# listing ok: "Pokémon Rumble", 16 cards.
+
+# ---- HeartGold SoulSilver -----------------------------------------------------------------
+
+[[set]]
+name = "HGSS Promos"
+id = "hgssp"
+pad = 2
+# listing ok: "HGSS Black Star Promos", localIds "HGSS01".."HGSS25".
+
+[[set]]
+name = "Unleashed"
+id = "hgss2"
+# listing ok.
+
+[[set]]
+name = "Undaunted"
+id = "hgss3"
+# listing ok.
+
+[[set]]
+name = "Triumphant"
+id = "hgss4"
+# listing ok.
+
+[[set]]
+name = "Call of Legends"
+id = "col1"
+# listing ok.
+
+# ---- Black & White ------------------------------------------------------------------------
+
+[[set]]
+name = "Black and White"
+id = "bw1"
+# listing ok: "Black & White".
+
+[[set]]
+name = "Black and White Promos"
+id = "bwp"
+pad = 2
+# listing ok: "BW Black Star Promos", localIds "BW01".."BW101".
+
+[[set]]
+name = "Emerging Powers"
+id = "bw2"
+# listing ok.
+
+[[set]]
+name = "Noble Victories"
+id = "bw3"
+# listing ok.
+
+[[set]]
+name = "Next Destinies"
+id = "bw4"
+# listing ok.
+
+[[set]]
+name = "Dark Explorers"
+id = "bw5"
+# listing ok.
+
+[[set]]
+name = "McDonald's Promos 2012"
+id = "2012bw"
+# listing ok: "McDonald's Collection 2012", 12 cards.
+
+[[set]]
+name = "Dragons Exalted"
+id = "bw6"
+# listing ok.
+
+[[set]]
+name = "Dragon Vault"
+id = "dv1"
+# listing ok: 21 cards.
+
+[[set]]
+name = "Boundaries Crossed"
+id = "bw7"
+# listing ok; TCGdex writes "-EX" where Collectr writes " EX".
+
+[[set]]
+name = "Plasma Storm"
+id = "bw8"
+# listing ok.
+
+[[set]]
+name = "Plasma Freeze"
+id = "bw9"
+# listing ok: Collectr's "(Team Plasma)" suffix isn't in TCGdex names.
+
+[[set]]
+name = "Plasma Blast"
+id = "bw10"
+# listing ok.
+
+[[set]]
+name = "Legendary Treasures"
+id = "bw11"
+rc_max = 25
+# listing ok: 140 cards = 1-115 plus RC1-RC25 in the same set.
+
+[[set]]
+name = "Legendary Treasures: Radiant Collections"
+id = "bw11"
+radiant = true
+rc_max = 25
+# The RC cards live inside bw11 (ids like "bw11-RC1", checked 2026-11-24). TCGdex also
+# lists a set "rc" ("Radiant Collection", 25 cards) but its card list is empty, so it isn't used.
+
+# ---- XY -----------------------------------------------------------------------------------
+
+[[set]]
+name = "XY Base Set"
+id = "xy1"
+# listing ok: "XY" (full arts found by number).
+
+[[set]]
+name = "XY Promos"
+id = "xyp"
+pad = 2
+# listing ok: "XY Black Star Promos", localIds "XY01".."XY211" (three digits from XY100).
+
+[[set]]
+name = "XY Trainer Kit: Bisharp & Wigglytuff"
+id = "tk-xy-b"
+alt = ["tk-xy-w"]
+# TCGdex splits the kit into its two 30-card decks; the same number is a different card in each deck.
+
+[[set]]
+name = "XY Trainer Kit: Sylveon & Noivern"
+id = "tk-xy-sy"
+alt = ["tk-xy-n"]
+# Two decks again; TCGdex names may use a curly apostrophe.
+
+[[set]]
+name = "Flashfire"
+id = "xy2"
+# listing ok: some names carry accents in TCGdex ("é").
+
+[[set]]
+name = "Furious Fists"
+id = "xy3"
+# listing ok.
+
+[[set]]
+name = "Phantom Forces"
+id = "xy4"
+# listing ok.
+
+[[set]]
+name = "Primal Clash"
+id = "xy5"
+# listing ok: Collectr's "(Omega)"/"(Alpha)" are ability markers, not in TCGdex names.
+
+[[set]]
+name = "Double Crisis"
+id = "dc1"
+# card listing fetched 2026-11-24.
+
+[[set]]
+name = "Roaring Skies"
+id = "xy6"
+# listing ok.
+
+[[set]]
+name = "Ancient Origins"
+id = "xy7"
+# listing ok.
+
+[[set]]
+name = "BREAKthrough"
+id = "xy8"
+# listing ok.
+
+[[set]]
+name = "BREAKpoint"
+id = "xy9"
+# listing ok: full arts found by number.
+
+[[set]]
+name = "Generations"
+id = "g1"
+rc_max = 32
+# listing ok: 117 cards = 1-83 (plus 28a, 73a) and RC1-RC32 in the same set.
+
+[[set]]
+name = "Generations: Radiant Collection"
+id = "g1"
+radiant = true
+rc_max = 32
+# card listing fetched 2026-11-24; the Radiant Collection cards share the g1 set.
+
+[[set]]
+name = "Fates Collide"
+id = "xy10"
+# listing ok.
+
+[[set]]
+name = "Steam Siege"
+id = "xy11"
+# listing ok.
+
+# ---- Sun & Moon / Sword & Shield ----------------------------------------------------------
+
+[[set]]
+name = "Sun & Moon Base Set"
+id = "sm1"
+# listing ok: "Sun & Moon"; SM localIds have no leading zeros.
+
+[[set]]
+name = "Cosmic Eclipse"
+id = "sm12"
+# listing ok: no leading zeros in sm12.
+
+[[set]]
+name = "Brilliant Stars"
+id = "swsh9"
+pad = 3
+# listing ok: localIds are "001".."172" plus secrets.
+
+[[set]]
+name = "Silver Tempest"
+id = "swsh12"
+pad = 3
+# listing ok: three-digit localIds ("001").
+
+# ---- Scarlet & Violet / Mega Evolution ----------------------------------------------------
+
+[[set]]
+name = "Scarlet & Violet Base Set"
+id = "sv01"
+pad = 3
+# listing ok: "Scarlet & Violet"; secret rares run past the printed total.
+
+[[set]]
+name = "Stellar Crown"
+id = "sv07"
+pad = 3
+# listing ok: three-digit localIds.
+
+[[set]]
+name = "Prismatic Evolutions"
+id = "sv08.5"
+pad = 3
+# listing ok: three-digit localIds.
+
+[[set]]
+name = "Chaos Rising"
+id = "me04"
+pad = 3
+# listing ok: Mega Evolution series; three-digit localIds.
+
+# ---- Sets TCGdex can't match --------------------------------------------------------------
+
+[[set]]
+name = "20th Anniversary"
+lang = "ja"
+none = "TCGdex's Japanese catalogue lists CP6 (20th Anniversary) but has no cards in it yet"
+# /v2/ja/sets/CP6: cardCount.official 87, "cards": [] (checked 2026-11-24).
+
+[[set]]
+name = "Megalo Cannon"
+lang = "ja"
+none = "TCGdex's Japanese catalogue lists BW9 (Megalo Cannon) but has no cards in it yet"
+# /v2/ja/sets/BW9: cardCount.official 76, "cards": [] (checked 2026-11-24).
+
+[[set]]
+name = "Gym Challenge (Japanese)"
+lang = "ja"
+none = "Japanese Challenge from the Darkness cards carry no printed number, and Collectr's number is the English Gym Challenge one, which doesn't match TCGdex's order"
+# ja PMCG6 has 98 cards in a different order from the English set, so an English number
+# would pick the wrong card.
+
+[[set]]
+name = "Super Legend Set: Xerneas-EX & Yveltal-EX"
+none = "TCGdex has no set for this deck box in either catalogue"
+# Searched /v2/en/sets and /v2/ja/sets for "Legend", "Xerneas", "Yveltal": no match.
+
+[[set]]
+name = "SV: Ancient Koraidon ex Starter Deck & Build Set"
+none = "TCGdex has no set for this starter deck in either catalogue"
+# /v2/en/sets has no starter decks for SV; /v2/ja/sets only has the Stellar starter sets SVLS/SVLN.
+
+[[set]]
+name = "SV: ex Starter Set Quaxly & Mimikyu ex"
+none = "TCGdex has no set for this starter set in either catalogue"
+# Same search as above: no Quaxly / Mimikyu starter set in en or ja.
+
+[[set]]
+name = "The Legend of Blue Eyes White Dragon"
+not_pokemon = true
+# A Yu-Gi-Oh! set; Collectr's Category column says "YuGiOh" too.

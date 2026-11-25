@@ -1,0 +1,40 @@
+name: Card mismatch
+description: A card matched the wrong TCGdex card, got the wrong printing, or should have matched but didn't.
+labels: [card-mismatch]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Only the details of the one card, please. **Don't attach your export.**
+  - type: input
+    id: set
+    attributes:
+      label: Set name (as your export shows it)
+      placeholder: Legendary Treasures
+    validations:
+      required: true
+  - type: input
+    id: number
+    attributes:
+      label: Card number (as your export shows it)
+      placeholder: 9/113 or RC24
+    validations:
+      required: true
+  - type: input
+    id: printing
+    attributes:
+      label: Printing (Variance in the export)
+      placeholder: Normal, Holofoil, Reverse Holofoil, 1st Edition…
+    validations:
+      required: true
+  - type: input
+    id: got
+    attributes:
+      label: What card-ledger matched it to (the id shown, or "unresolved" with its reason)
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What the physical card actually is
+      description: Name, set symbol, number and printing as printed on the card.

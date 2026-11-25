@@ -1,0 +1,11 @@
+{
+  "id": "base1-24",
+  "localId": "24",
+  "name": "Charmeleon",
+  "category": "Pokemon",
+  "rarity": "Uncommon",
+  "set": { "id": "base1", "name": "Base Set" },
+  "dexId": [5],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": true },
+  "pricing": { "tcgplayer": { "normal": { "marketPrice": 1.00 } } }
+}

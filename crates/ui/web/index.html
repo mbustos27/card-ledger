@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>card-ledger</title>
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <h1>card-ledger</h1>
+    <p class="sub" id="sub">Loading the ledger…</p>
+  </header>
+
+  <section class="summary" aria-label="Summary">
+    <div class="tile tile-value">
+      <span class="lbl">Value now <span class="fine">(unchecked cards at LP)</span></span>
+      <span class="big num" id="s-value">–</span>
+      <span class="fine">If unchecked cards were NM <span class="num" id="s-value-nm">–</span></span>
+      <span class="fine">Collectr (NM) total <span class="num" id="s-collectr">–</span></span>
+      <span class="fine num" id="s-diff"></span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Unchecked</span>
+      <span class="big num" id="s-unchecked">–</span>
+      <span class="fine" id="s-unchecked-of"></span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Unresolved</span>
+      <span class="big num" id="s-unresolved">–</span>
+      <span class="fine">no catalogue match</span>
+    </div>
+    <div class="tile">
+      <span class="lbl">Flagged</span>
+      <span class="big num" id="s-flagged">–</span>
+      <span class="fine">possible scan mistakes</span>
+    </div>
+    <div class="tile tile-prices">
+      <span class="lbl">Prices</span>
+      <span class="fine" id="s-fetched">–</span>
+      <span class="fine" id="s-collectr-date"></span>
+      <span class="fine" id="s-justtcg"></span>
+      <button type="button" id="refresh" class="btn">Refresh prices</button>
+    </div>
+  </section>
+
+  <p id="status" class="status" role="status" aria-live="polite" hidden></p>
+
+  <section aria-label="Piles">
+    <div class="piles" id="piles"></div>
+    <p class="fine">Pile values count unchecked cards at LP. Unchecked cards are sorted into piles by their NM value.</p>
+  </section>
+
+  <section class="tools" aria-label="Filters">
+    <label class="search">
+      <span class="visually-hidden">Search cards</span>
+      <input type="search" id="q" placeholder="Search name, set, number or id" autocomplete="off">
+    </label>
+    <div class="toggles" id="toggles" role="group" aria-label="Show only"></div>
+    <label class="sort">
+      <span>Sort</span>
+      <select id="sort">
+        <option value="value">Value, high to low</option>
+        <option value="pile">Pile, then binder order</option>
+        <option value="set">Set and number</option>
+        <option value="name">Name</option>
+      </select>
+    </label>
+    <button type="button" id="clear" class="btn btn-quiet">Clear filters</button>
+  </section>
+
+  <p class="count" id="count" aria-live="polite"></p>
+  <ol class="list" id="list" aria-label="Cards"></ol>
+
+  <footer class="foot">
+    <p><b>Piles.</b> Toploader: value $20 and up. Small binder (penny sleeve): $2 to under $20. Big binder (Pokédex order): under $2 and holo, reverse holo, rare, promo or better. Box: other commons and uncommons, every extra copy of a card, and cards with no price. Set aside: kept but left out of the piles.</p>
+    <p><b>Extra copies.</b> One copy of each card is the keeper: the best condition among checked copies, or copy 1 until any is checked. The other copies go to the box; their value still counts.</p>
+    <p><b>Unchecked cards</b> are sorted into piles by their NM value and count in the totals at their LP value. Their range runs from NM down to HP.</p>
+    <p><b>Condition values</b> come from per-condition prices where a source has them, then research ranges, otherwise NM × a condition multiplier. Each value names its basis.</p>
+  </footer>
+</div>
+</body>
+</html>

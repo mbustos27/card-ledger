@@ -1,0 +1,9 @@
+{
+  "id": "dc1",
+  "name": "Double Crisis",
+  "cards": [
+    { "id": "dc1-5", "localId": "5", "name": "Team Aqua's Walrein" },
+    { "id": "dc1-6", "localId": "6", "name": "Team Aqua's Kyogre EX" },
+    { "id": "dc1-14", "localId": "14", "name": "Team Magma's Aggron" }
+  ]
+}

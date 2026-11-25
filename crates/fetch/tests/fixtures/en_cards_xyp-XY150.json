@@ -1,0 +1,27 @@
+{
+  "category": "Pokemon",
+  "id": "xyp-XY150",
+  "localId": "XY150",
+  "name": "Yveltal EX",
+  "rarity": "Promo",
+  "image": "https://assets.tcgdex.net/en/xy/xyp/XY150",
+  "set": { "id": "xyp", "name": "XY Black Star Promos" },
+  "variants": { "firstEdition": false, "holo": false, "normal": true, "reverse": false, "wPromo": false },
+  "dexId": [717],
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.097Z",
+      "unit": "EUR",
+      "idProduct": 900150,
+      "low": 10.00,
+      "trend": 15.00,
+      "low-holo": null,
+      "trend-holo": 5.00
+    },
+    "tcgplayer": {
+      "unit": "USD",
+      "updated": "2026-11-24T22:16:26.632Z",
+      "holofoil": { "productId": 100150, "lowPrice": 10.00, "marketPrice": 20.00 }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_fixture": "Written by hand in the shape of the JustTCG v1 /cards docs (2026-11-24). Not a live answer: no key on this machine.",
+  "data": [
+    {
+      "id": "pokemon-double-crisis-team-aquas-kyogre-ex-6",
+      "uuid": "00000000-0000-5000-8000-000000000001",
+      "name": "Team Aqua's Kyogre EX",
+      "game": "Pokemon",
+      "set": "double-crisis-pokemon",
+      "set_name": "Double Crisis",
+      "rarity": "Ultra Rare",
+      "tcgplayerId": "100006",
+      "mtgjsonId": null,
+      "scryfallId": null,
+      "variants": [
+        { "id": "g_near-mint_holofoil", "condition": "Near Mint", "printing": "Holofoil", "price": 100.0, "lastUpdated": 1795560000, "priceStatus": "current", "lastKnownPrice": null },
+        { "id": "g_lightly-played_holofoil", "condition": "Lightly Played", "printing": "Holofoil", "price": 80.0, "lastUpdated": 1795550000, "priceStatus": "current", "lastKnownPrice": null },
+        { "id": "g_moderately-played_holofoil", "condition": "Moderately Played", "printing": "Holofoil", "price": 60.0, "lastUpdated": 1795540000, "priceStatus": "current", "lastKnownPrice": null },
+        { "id": "g_heavily-played_holofoil", "condition": "Heavily Played", "printing": "Holofoil", "price": null, "lastUpdated": null, "priceStatus": "expired", "lastKnownPrice": 40.0 },
+        { "id": "g_damaged_holofoil", "condition": "Damaged", "printing": "Holofoil", "price": 30.0, "lastUpdated": 1795500000, "priceStatus": "current", "lastKnownPrice": null },
+        { "id": "g_near-mint_holofoil_jp", "condition": "Near Mint", "printing": "Holofoil", "language": "Japanese", "price": 999.0, "lastUpdated": 1795565000, "priceStatus": "current", "lastKnownPrice": null }
+      ]
+    },
+    {
+      "id": "pokemon-xy-base-set-muscle-band-121",
+      "uuid": "00000000-0000-5000-8000-000000000002",
+      "name": "Muscle Band",
+      "game": "Pokemon",
+      "set": "xy-base-set-pokemon",
+      "set_name": "XY Base Set",
+      "rarity": "Uncommon",
+      "tcgplayerId": "87658",
+      "variants": [
+        { "id": "m_near-mint", "condition": "Near Mint", "printing": "Normal", "price": 5.0, "lastUpdated": 1795560000, "priceStatus": "current" },
+        { "id": "m_lightly-played", "condition": "Lightly Played", "printing": "Normal", "price": 4.0, "lastUpdated": 1795560000, "priceStatus": "current" },
+        { "id": "m_near-mint_reverse-holofoil", "condition": "Near Mint", "printing": "Reverse Holofoil", "price": 6.0, "lastUpdated": 1795561000, "priceStatus": "current" },
+        { "id": "m_sealed", "condition": "Sealed", "printing": "Normal", "price": 9.0, "lastUpdated": 1795560000, "priceStatus": "current" },
+        { "id": "m_near-mint_odd", "condition": "Near Mint", "printing": "Cosmos Holofoil", "price": 7.0, "lastUpdated": 1795560000, "priceStatus": "current" }
+      ]
+    }
+  ],
+  "meta": { "total": 2, "limit": 20, "offset": 0, "hasMore": false },
+  "_metadata": { "apiPlan": "Free", "apiRequestsRemaining": 987 }
+}

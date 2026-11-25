@@ -1,0 +1,16 @@
+{
+  "id": "ex14-44",
+  "localId": "44",
+  "name": "Aron",
+  "category": "Pokemon",
+  "rarity": "Common",
+  "set": { "id": "ex14", "name": "Crystal Guardians" },
+  "dexId": [304],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": {
+    "tcgplayer": {
+      "normal": { "marketPrice": 1.00 },
+      "reverse-holofoil": { "marketPrice": 2.00 }
+    }
+  }
+}

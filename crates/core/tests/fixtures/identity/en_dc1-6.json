@@ -1,0 +1,11 @@
+{
+  "id": "dc1-6",
+  "localId": "6",
+  "name": "Team Aqua's Kyogre EX",
+  "category": "Pokemon",
+  "rarity": "Ultra Rare",
+  "set": { "id": "dc1", "name": "Double Crisis" },
+  "dexId": [382],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": { "holofoil": { "marketPrice": 1.00 } } }
+}

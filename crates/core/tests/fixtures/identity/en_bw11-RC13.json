@@ -1,0 +1,11 @@
+{
+  "id": "bw11-RC13",
+  "localId": "RC13",
+  "name": "Purrloin",
+  "category": "Pokemon",
+  "rarity": "Uncommon",
+  "set": { "id": "bw11", "name": "Legendary Treasures" },
+  "dexId": [509],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": null }
+}

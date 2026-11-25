@@ -1,0 +1,11 @@
+{
+  "id": "g1-RC7",
+  "localId": "RC7",
+  "name": "Snorunt",
+  "category": "Pokemon",
+  "rarity": "Common",
+  "set": { "id": "g1", "name": "Generations" },
+  "dexId": [361],
+  "variants": { "normal": true, "reverse": false, "holo": false, "firstEdition": false },
+  "pricing": { "tcgplayer": null }
+}

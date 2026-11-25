@@ -1,0 +1,27 @@
+{
+  "category": "Pokemon",
+  "id": "base1-24",
+  "localId": "24",
+  "name": "Charmeleon",
+  "rarity": "Uncommon",
+  "image": "https://assets.tcgdex.net/en/base/base1/24",
+  "set": { "id": "base1", "name": "Base Set" },
+  "variants": { "firstEdition": true, "holo": false, "normal": true, "reverse": false, "wPromo": false },
+  "dexId": [5],
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.105Z",
+      "unit": "EUR",
+      "idProduct": 900024,
+      "low": 0.25,
+      "trend": 2.00,
+      "low-holo": null,
+      "trend-holo": 1.00
+    },
+    "tcgplayer": {
+      "unit": "USD",
+      "updated": "2026-11-24T22:16:19.511Z",
+      "normal": { "productId": 100024, "lowPrice": 1.00, "marketPrice": 2.50 }
+    }
+  }
+}

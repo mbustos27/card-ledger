@@ -1,0 +1,27 @@
+{
+  "category": "Pokemon",
+  "id": "dc1-6",
+  "localId": "6",
+  "name": "Team Aqua's Kyogre EX",
+  "rarity": "Ultra Rare",
+  "image": "https://assets.tcgdex.net/en/xy/dc1/6",
+  "set": { "id": "dc1", "name": "Double Crisis" },
+  "variants": { "firstEdition": false, "holo": false, "normal": true, "reverse": false, "wPromo": false },
+  "dexId": [382],
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.112Z",
+      "unit": "EUR",
+      "idProduct": 900006,
+      "low": 2.00,
+      "trend": 8.00,
+      "low-holo": null,
+      "trend-holo": 4.00
+    },
+    "tcgplayer": {
+      "unit": "USD",
+      "updated": "2026-11-24T22:16:27.722Z",
+      "holofoil": { "productId": 100006, "lowPrice": 5.00, "marketPrice": 10.00 }
+    }
+  }
+}

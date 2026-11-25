@@ -1,0 +1,19 @@
+[package]
+name = "card-ledger-fetch"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+card-ledger-core = { path = "../core" }
+serde.workspace = true
+serde_json.workspace = true
+ureq.workspace = true
+
+[dev-dependencies]
+rusqlite.workspace = true
+
+# The JustTCG key's store on Windows (Credential Manager). Elsewhere it's a file in the data folder.
+[target.'cfg(windows)'.dependencies]
+keyring.workspace = true
+windows-sys.workspace = true

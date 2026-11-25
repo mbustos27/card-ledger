@@ -1,0 +1,23 @@
+{
+  "category": "Pokemon",
+  "id": "g1-RC7",
+  "localId": "RC7",
+  "name": "Snorunt",
+  "rarity": "Common",
+  "image": "https://assets.tcgdex.net/en/xy/g1/RC7",
+  "set": { "id": "g1", "name": "Generations" },
+  "variants": { "firstEdition": false, "holo": false, "normal": true, "reverse": false, "wPromo": false },
+  "dexId": [361],
+  "pricing": {
+    "cardmarket": {
+      "updated": "2026-11-24T22:16:19.129Z",
+      "unit": "EUR",
+      "idProduct": 900007,
+      "low": 1.00,
+      "trend": 2.00,
+      "low-holo": null,
+      "trend-holo": 3.00
+    },
+    "tcgplayer": null
+  }
+}

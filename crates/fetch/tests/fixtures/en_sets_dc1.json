@@ -1,0 +1,9 @@
+{
+  "id": "dc1",
+  "name": "Double Crisis",
+  "cards": [
+    { "id": "dc1-1", "localId": "1", "name": "Team Magma's Numel", "image": "https://assets.tcgdex.net/en/xy/dc1/1" },
+    { "id": "dc1-6", "localId": "6", "name": "Team Aqua's Kyogre EX", "image": "https://assets.tcgdex.net/en/xy/dc1/6" },
+    { "id": "dc1-34", "localId": "34", "name": "Double Magma Energy", "image": "https://assets.tcgdex.net/en/xy/dc1/34" }
+  ]
+}
